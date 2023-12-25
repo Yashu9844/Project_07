@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h4{
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+}
+ h4::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    /* left: 0; */
+    background-color: rgb(17, 17, 18);
+    transition: width 0.3s ease;
+   
+    /* transform: scaleX(0) */
+}
+ h4:hover::before
+{
+    /* //transform: scaleX(1) */
+    width: 100%;
+
+}  
