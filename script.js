@@ -283,3 +283,9 @@ gsap.from(".rright h4 , .lleft h2,.lleft button",{
   
   scrub:2
   }})
+
+  
+
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
