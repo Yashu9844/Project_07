@@ -176,6 +176,28 @@ function swipe(){
       delay: 1500,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      // Mobile phones
+      320: {
+        slidesPerView: 1.2,
+        spaceBetween: 10
+      },
+      // Large mobile
+      480: {
+        slidesPerView: 1.5,
+        spaceBetween: 12
+      },
+      // Tablets
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 15
+      },
+      // Desktop
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 18
+      }
+    }
   });
 }
 swipe()
